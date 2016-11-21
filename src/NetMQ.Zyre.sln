@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQ.Zyre", "NetMQ.Zyre\NetMQ.Zyre.csproj", "{4D648749-20A6-4A53-A313-F67DA1BA712E}"
 EndProject
@@ -24,6 +24,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{208C
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplePeer", "Samples\SamplePeer\SamplePeer.csproj", "{06C728A8-6861-42BB-8567-1397D61A6FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQ.Zyre.net35", "NetMQ.Zyre.net35\NetMQ.Zyre.net35.csproj", "{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQ.Zyre.Tests.net35", "NetMQ.Zyre.Tests.net35\NetMQ.Zyre.Tests.net35.csproj", "{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +75,30 @@ Global
 		{06C728A8-6861-42BB-8567-1397D61A6FC2}.Release|x64.Build.0 = Release|Any CPU
 		{06C728A8-6861-42BB-8567-1397D61A6FC2}.Release|x86.ActiveCfg = Release|Any CPU
 		{06C728A8-6861-42BB-8567-1397D61A6FC2}.Release|x86.Build.0 = Release|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Debug|x64.Build.0 = Debug|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Debug|x86.Build.0 = Debug|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Release|x64.ActiveCfg = Release|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Release|x64.Build.0 = Release|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Release|x86.ActiveCfg = Release|Any CPU
+		{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}.Release|x86.Build.0 = Release|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Debug|x64.Build.0 = Debug|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Debug|x86.Build.0 = Debug|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Release|x64.ActiveCfg = Release|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Release|x64.Build.0 = Release|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C0373AF-E211-41E4-BFCD-C03B1B332CF8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

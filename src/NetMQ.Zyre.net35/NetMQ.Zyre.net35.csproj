@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4D3F4B7-F6A1-4E12-9394-0D271AD75553}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetMQ.Zyre.net35</RootNamespace>
+    <AssemblyName>NetMQ.Zyre.net35</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncIO, Version=0.1.25.0, Culture=neutral, PublicKeyToken=44a94435bd6f33f8, processorArchitecture=MSIL">
+      <HintPath>..\packages\AsyncIO.0.1.26.0\lib\net35\AsyncIO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetMQ, Version=4.0.0.0, Culture=neutral, PublicKeyToken=a6decef4ddc58b3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetMQ.4.0.0-rc5\lib\net35\NetMQ.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization.cs" />
+    <Compile Include="zproto\ZreMsgOriginal.cs" />
+    <Compile Include="ZreMsg.cs" />
+    <Compile Include="Zyre.cs" />
+    <Compile Include="ZyreEvents\ZyreEventEnter.cs" />
+    <Compile Include="ZyreEvents\ZyreEventEvasive.cs" />
+    <Compile Include="ZyreEvents\ZyreEventExit.cs" />
+    <Compile Include="ZyreEvents\ZyreEventHeader.cs" />
+    <Compile Include="ZyreEvents\ZyreEventJoin.cs" />
+    <Compile Include="ZyreEvents\ZyreEventLeave.cs" />
+    <Compile Include="ZyreEvents\ZyreEventShout.cs" />
+    <Compile Include="ZyreEvents\ZyreEventStop.cs" />
+    <Compile Include="ZyreEvents\ZyreEventWhisper.cs" />
+    <Compile Include="ZyreGroup.cs" />
+    <Compile Include="ZyreNode.cs" />
+    <Compile Include="ZyrePeer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="zproto\Example.xml" />
+    <Content Include="zproto\License.xml" />
+    <Content Include="zproto\zre_msg.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="zproto\_ReadMe.txt" />
+    <Content Include="_ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NetMQ.Zyre.nuspec" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="zproto\Generate.bat" />
+    <None Include="zproto\zproto_codec_cs.gsl" />
+    <None Include="zproto\zproto_lib.gsl" />
+    <None Include="zproto\zproto_lib_cs.gsl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
