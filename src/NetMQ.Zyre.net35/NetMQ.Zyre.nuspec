@@ -17,12 +17,12 @@
     <copyright>Copyright 2016 Dale Brubaker and Contributors</copyright>
     <tags>Zyre .NET C# ZeroMQ 0MQ CLRZMQ NetMQ Messaging ZMQ transport distributed discovery</tags>
     <dependencies>
-      <dependency id="AsyncIO" version="0.1.18.0"/>
-      <dependency id="NetMQ" version="4.0.0-beta" />
+      <dependency id="AsyncIO" version="0.1.26.0"/>
+      <dependency id="NetMQ" version="4.0.0-rc5" />
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\NetMQ.Zyre.dll" target="lib\net40\" />
-    <file src="bin\Release\NetMQ.Zyre.xml" target="lib\net40\" />
+    <file src="bin\Release\NetMQ.Zyre.dll" target="lib\net35\" />
+    <file src="bin\Release\NetMQ.Zyre.xml" target="lib\net35\" />
   </files>
 </package>
